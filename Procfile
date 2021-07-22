@@ -1,0 +1,1 @@
+web: gunicorn JDMR_Ischool.wsgi
