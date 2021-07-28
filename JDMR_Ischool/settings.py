@@ -52,6 +52,8 @@ INSTALLED_APPS = [
 
 ]
 
+SITE_ID = 1
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -144,12 +146,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 AUTHENTICATION_BACKENDS = [
+   
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
- 
+    
 ]
 
 SITE_ID = 2
@@ -165,8 +168,8 @@ SOCIALACCOUNT_PROVIDERS = {
             'access_type': 'online',
         },
         'APP': {
-            'client_id': '156414197023-nk4f0h3df0d7utdas8pme7qgrl87n1ni.apps.googleusercontent.com',
-            'secret': 'toYLOPt5LN9KVAPfehhKl9F5',
+            'client_id': '557823691223-vn5365mhjl6ara5f3vl84001ij6uqrgg.apps.googleusercontent.com',
+            'secret': '47fHs5EK5KWKTWSg9YSm3-q-',
             'key': ''
         }
     }
